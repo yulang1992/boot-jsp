@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dse.edwin.mapper.ResourceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dse.edwin.entity.Resource">
+        <id column="id" property="id" />
+        <result column="resource_name" property="resourceName" />
+        <result column="resource_url" property="resourceUrl" />
+        <result column="resource_icon" property="resourceIcon" />
+        <result column="parent_id" property="parentId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, resource_name, resource_url, resource_icon, parent_id
+    </sql>
+
+</mapper>

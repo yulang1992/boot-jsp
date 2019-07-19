@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/*********************气泡提示框样式**********************/
+.yktip {
+	position: relative;
+	padding: 5px;
+	min-width: 52px;
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 12px;
+	background-color: #e63751;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.yktip:before {
+	position: absolute;
+	display: inline-block;
+	border-top: 8px solid #E63751;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	left: 18px;
+	bottom: -8px;
+	content: "";
+}
+
+.yktipWAI {
+	position: absolute;
+	z-index: 9999999;
+}
+
+/*********************文本框中提示文案样式**********************/
+.input-flag-tip {
+	margin-top: -30px;
+	margin-left: 50px;
+	color: #999;
+	height: 30px;
+	line-height: 15px;
+	font-size: 14px;
+}
+
+/*********************自定义样式**************************/
+.spanFull {
+	width: 100%;
+	margin-bottom: -33px;
+}
+
+.notSelect {
+	color: #CCCCBD;
+	margin: 6px;
+}
+
+.selectable {
+	margin: 6px;
+}
+
+.pageDiv {
+	position: absolute;
+	z-index: 25;
+	top: 20px;
+	right: 260px;
+}
+
+.formPM {
+	padding: 0px;
+	margin: 0px;
+}
+
+.padding {
+	padding: 15px 15px 7px 15px;
+}
+
+.chang-image1 {
+	position: absolute;
+	width: 160px;
+	height: 23px;
+	background-color: #c0c0c0;
+	top: 306px;
+	right: 30px;
+	text-align: center;
+	line-height: 20px;
+	color: #666666;
+	z-index: 999999;
+}
+
+.chang-image2 {
+	position: absolute;
+	width: 160px;
+	height: 23px;
+	background-color: #c0c0c0;
+	top: 194px;
+	right: 6px;
+	text-align: center;
+	line-height: 20px;
+	color: #666666;
+	z-index: 999999;
+}
+
+.img-src {
+	position: absolute;
+	z-index: 2000;
+	top: 112px;
+	padding: 6px;
+	width: 160px;
+	height: 210px;
+	right: 24px;
+	background-color: white;
+	-webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+	display: block;
+}
+
+.preview-div {
+	position: absolute;
+	right: 211px;
+	z-index: 19000;
+	top: 112px;
+}
+
+.jcrop-holder #preview-pane {
+	display: block;
+	position: absolute;
+	z-index: 2000;
+	top: 0px;
+	right: -183px;
+	padding: 6px;
+	background-color: white;
+	-webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+#preview-pane .preview-container {
+	width: 160px;
+	height: 210px;
+	overflow: hidden;
+}
+
+.tx {
+	text-align: center;
+}
+
+.img-circle {
+	border-radius: 5px;
+}
+
+.title-omit {
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*分页样式*/
+.pag {
+	padding: 15px;
+	text-align: center;
+	clear: both;
+	border-bottom: 1px solid #e4eaec;
+	border-right: 1px solid #e4eaec;
+	border-left: 1px solid #e4eaec
+}
+
+.pag a {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	color: #333333;
+	text-decoration: none;
+}
+
+.pag a:hover {
+	color: #32810A;
+	background: #B0E2D8;
+	border-radius: 3px
+}
+
+.pag a:active {
+	color: #32810A;
+	background: #9BCA5A;
+}
+
+.pag span.current {
+	font-weight: bold;
+	background: #1ab394;
+	color: #fff;
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	border-radius: 3px
+}
+
+.pag span.disabled {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	color: #B8B8B8;
+}
